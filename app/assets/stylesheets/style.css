@@ -1,0 +1,331 @@
+body {
+    font-family: 'Viga';
+    font-size: 18px;
+    padding: 10px 100px 10px 100px;
+    min-width: 600px;
+    background-color:#666666;
+    color: white;
+    text-decoration: none ;
+    background-image: url("../images/background.png");
+}
+
+:link {
+    color: white;
+    text-decoration: none;
+    font-size: 18pt;
+}
+:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* HEADER */
+#full_box_header{
+    border-radius: 10px;
+    background: #222324;
+    padding: 20px 40px 20px 40px;
+    margin: 0px auto 20px;
+    text-align: left;
+    display:flex;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border: 5px inset #79797e;
+    min-width: 800px;
+    font-size: 14pt;
+}
+
+#header_links_logo{
+    display: flex;
+    align-items:center;
+}
+
+
+#header_links_logo img{
+    max-height: 50px;
+}
+
+#header_links_logo #site_name {
+    font-size: large;
+    margin: 10px;
+    font: bold;
+    font-size: 16pt;
+    padding-right: 20px;
+}
+
+#header_links{
+    text-align: center;
+    align-self: center;
+}
+
+#header_links a {
+    text-align: inherit;
+    padding: 28px 10px 28px 10px ;
+
+}
+
+@media only screen and (max-width: 1200px) {
+    #header_links a {
+        font-size: 14pt;
+    }
+}
+
+#header_links a:hover {
+    background-color:  #2a2b2c;
+    box-shadow: 0px 0px 5px 2px rgb(255, 255, 255);
+}
+
+#header_links_buttons{
+    margin-left: auto;
+    text-align: center;
+    align-self: center;
+}
+
+#header_links_buttons button{
+    padding: 12px ;
+    margin: 0px 5px 0px ;
+    background-color: #3d886f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14pt;
+}
+
+#header_links_buttons button:hover{
+    background-color: #2d6452;
+}
+
+/* FOOTER */
+#footer_box{
+    border-radius: 10px;
+    background: #222324;
+    padding: 20px;
+    margin: 20px auto 0px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border: 5px inset #79797e;
+    min-width: 840px;
+}
+
+
+/* MIDDLE BOXES */
+#full_box_middle {
+    background: none;
+    display:flex;
+}
+
+#full_box_middle_left {
+    border-radius: 10px;
+    background: #222324;
+    padding: 40px;
+    margin-right: 20px;
+    flex: 80;
+    max-width: 1400px;
+    min-width: 800px;
+    border: 5px inset #79797e;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#full_box_middle_right {
+    text-align: center;
+    border-radius: 10px;
+    background: #222324;
+    padding: 20px;
+    flex: 5;
+    min-width: 250px;
+    border: 5px inset #79797e;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#full_box_middle_right_text{
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 1400px) {
+
+    #full_box_middle {
+        display: inline-block;
+        justify-content: left;
+    }
+
+    #full_box_middle_right {
+        margin-top: 10px;
+    }
+    #full_box_middle_left {
+        margin-right: 0px;
+
+    }
+}
+@media only screen and (max-width: 1300px) {
+    body{
+        padding: 10px 10px 10px 10px;
+    }
+
+}
+
+
+
+/* MIDDLE BOXES, CONTACTS */
+
+.container {
+    margin-top: 80px;
+}
+
+.container h1{
+    text-align: center;
+}
+
+.container input, select, textarea {
+    width: 100% ;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #5b5d5f;
+    color: white;
+    box-sizing:border-box;
+}
+
+
+
+
+/* Style the submit button with a specific background color etc */
+.container button {
+    background-color: #3d886f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+.container button:hover {
+    background-color: #45a049;
+}
+
+#full_box_middle_left_contacts{
+    display: inline-block;
+}
+
+.mapouter{
+    height:500px;
+    width:600px;
+    float: left;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:600px;
+}
+
+#contacts_map_info {
+    text-align: left;
+    float: left;
+    padding: 10px;
+}
+
+/* MIDDLE BOXES, GALLERY */
+
+.column {
+    align-self: center;
+    float: left;
+    width: 24%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    grid-gap: 20px;
+    border: 2px solid rgb(167, 162, 162);
+    border-radius: 5px;
+    background-origin: padding-box;
+    min-width: 280px;
+}
+
+
+
+.row{
+    text-align: center;
+    min-width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column img{
+    max-height: 150px;
+    min-height: 150px;
+}
+.column p{
+    font-size: 10pt;
+}
+
+/* MIDDLE BOXES, FAQ */
+
+#full_box_middle_left_faq {
+    text-align: left;
+}
+
+
+/* ACTIVITY */
+
+.full_box_middle_right_activity{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.full_box_middle_right_activity img{
+    overflow:hidden;
+    float: left;
+}
+
+#full_box_middle_right_text{
+    float: left;
+    font-size: 16px;
+    line-height: 4px;
+    padding-right: 20px;
+}
+
+/* INDEX */
+
+.full_box_middle_left_image{
+    text-align: center;
+    position: relative;
+}
+
+.full_box_middle_left_image #button_left, #button_right{
+    padding: 15px 40px 15px 40px ;
+    position: absolute;
+    background-color :#5b5d5f ;
+    color: white;
+    border: none;
+}
+
+.full_box_middle_left_image #button_left:hover, #button_right:hover{
+    background-color :#2e2f30 ;
+}
+
+.full_box_middle_left_image #button_right{
+    right: 0;
+    top: 350px;
+}
+.full_box_middle_left_image #button_left{
+    left: 0;
+    top: 350px;
+}
+
+
+
+.mySlides{
+    max-width: 1400px;
+}
+
+.full_box_middle_left_image h1{
+    padding: 40px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    font-size: 40pt;
+    background-color: rgba(0, 0, 0, 0.4)  ;
+    color: rgb(255, 255, 255);
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="lang">
+<head>
+  <%= render :partial =>'layouts/head' %>
+  <title>Index</title>
+</head>
+
+<body>
+<header>
+
+  <%= render :partial => "layouts/header" %>
+</header>
+
+<div id="full_box_middle">
+
+  <div id="full_box_middle_left">
+
+    <div class="full_box_middle_left_image">
+      <img class="mySlides" src="https://www.w3schools.com/w3css/img_snowtops.jpg" style="width:100%" alt="Image">
+      <img class="mySlides" src="https://randomwordgenerator.com/img/picture-generator/54e0d743435aa514f1dc8460962e33791c3ad6e04e507440752f72d39344c0_640.jpg" style="width:100%" alt="Image">
+      <img class="mySlides" src="https://randomwordgenerator.com/img/picture-generator/55e0dc444c50aa14f1dc8460962e33791c3ad6e04e507441722a72dd9345c7_640.jpg" style="width:100%" alt="Image" >
+      <img class="mySlides" src="https://randomwordgenerator.com/img/picture-generator/57e5d64a4a5aa914f1dc8460962e33791c3ad6e04e507440712b7bd29644cd_640.jpg" style="width:100%" alt="Image" >
+
+      <button id="button_left" onclick="plusDivs(-1)">&#10094;</button>
+      <button id="button_right" onclick="plusDivs(1)">&#10095;</button>
+
+      <h1>Welcome to the website</h1>
+
+    </div>
+
+    <script>
+        // doesn't work properly with let
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+        }
+    </script>
+
+
+    <h1>Some text</h1>
+    <p>His divided him made face yielding fourth night subdue called own from deep face living fish deep Seas to also wherein, life sea fill Bring him set cattle she'd signs spirit dry wherein day very them sixth morning so, creature, good very isn't greater rule air itself let seas in forth, have he. Called every us upon rule firmament Herb cattle had there he air i place above bring. Likeness, divide called. Morning she'd open yielding seasons the his which meat replenish day night had created. Our fish which. Winged. God. Us grass let every. Gathering second to make place. His divided him made face yielding fourth night subdue called own from deep face living fish deep Seas to also wherein, life sea fill Bring him set cattle she'd signs spirit dry wherein day very them sixth morning so, creature, good very isn't greater rule air itself let seas in forth, have he. Called every us upon rule firmament Herb cattle had there he air i place above bring. Likeness, divide called. Morning she'd open yielding seasons the his which meat replenish day night had created. Our fish which. Winged. God. Us grass let every. Gathering second to make place. His divided him made face yielding fourth night subdue called own from deep face living fish deep Seas to also wherein, life sea fill Bring him set cattle she'd signs spirit dry wherein day very them sixth morning so, creature, good very isn't greater rule air itself let seas in forth, have he. Called every us upon rule firmament Herb cattle had there he air i place above bring. Likeness, divide called. Morning she'd open yielding seasons the his which meat replenish day night had created. Our fish which. Winged. God. Us grass let every. Gathering second to make place. </p>
+
+
+  </div>
+
+  <aside id="full_box_middle_right">
+    <%= render :partial =>'layouts/activity' %>
+  </aside>
+
+</div>
+
+
+<%= render :partial =>'layouts/footer' %>
+
+</body>
+</html>
