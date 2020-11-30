@@ -9,7 +9,7 @@ class WelcomeController < ApplicationController
 
   # runs only once when the project is launched(don't need to accept rules multiple times)
   def rules_accept
-    if defined?($var).nil?
+    if $var.nil?
       render 'welcome/rules'
       $var = true
     end
