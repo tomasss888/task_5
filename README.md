@@ -1,24 +1,7 @@
-# README
+# Ruby-Task-5 (by Tomas Stanislovėnas PI18B)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Used Ruby version: 2.5.5
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## About
+- It's a simple 4 pages website using ruby.
+- Demonstration.pdf contains screenshots of website
